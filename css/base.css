@@ -10,6 +10,7 @@ body{
     font-family: 'Amiri', serif;
     color: #555;
     line-height: 1.5;
+    background-image: url('https://www.transparenttextures.com/patterns/concrete-wall.png');
 }
 a {
     text-decoration: none;
@@ -177,27 +178,6 @@ small{
     font-size: 0.7rem;
 }
 
-/* responsive */
-
-@media(max-width: 600px) {
-    html{
-        font-size: 87.5%;
-    }
-
-    .header_logo{
-        width: 60px;
-    }
-
-    .contents {
-        flex-direction: column;
-        margin-top: 10px;
-    }
-
-    #main_content,
-    #sideber {
-        width: 100%;
-    }
-}
 
 /* record */
 #record_contents h2{
@@ -284,3 +264,55 @@ small{
     text-align:center;
 }
 
+/* responsive */
+
+@media(max-width: 600px) {
+    html{
+        font-size: 87.5%;
+    }
+
+    .header_logo{
+        width: 60px;
+    }
+
+    .contents {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    #main_content,
+    #sideber {
+        width: 100%;
+    }
+    
+    
+img {
+    width:100%;
+    max-width: 100%;
+    height: auto;
+    
+    }
+
+    .bx-wrapper {
+        margin: 0;
+    }
+
+    #record_contents dd ul,
+    #schedule dd ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #record_contents dd ul li,
+    #schedule dd ul li{
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+
+    #record_contents dd,
+    #record_contents dt,
+    #schedule dd,
+    #schedule dt{
+        margin-left: 15%;
+    }
+}
